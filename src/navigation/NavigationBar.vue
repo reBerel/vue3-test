@@ -1,6 +1,6 @@
 <template lang="">
-    <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
+    <nav class="navbar fixed-top navbar-expand-lg" style="background-color: white; color: white; opacity:0.9;">
+  <div class="container-fluid" style=" filter: blur(0.5px)">
     <a class="navbar-brand" href="/">We-Meet</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -32,16 +32,17 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success rounded-5" type="submit">Search</button>
       </form>
-      <router-link to="/sign-in">SignIn</router-link>
+      <router-link class="nav-link" to="/sign-in">SignIn</router-link>
+      <Button class="btn btn-praimary"></Button>
     </div>
   </div>
 </nav>
 </template>
-<script>
+<script lang="ts">
 export default {
     
 }
 </script>
-<style lang="">
-    
+<style>
+
 </style>

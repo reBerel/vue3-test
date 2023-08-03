@@ -1,7 +1,11 @@
 <template lang="">
-    <div container>
+    <div class="container">
         <div>
-dsasdd
+            <img src="../assets/untitled.png" class="img-fluid">
+            <img src="../assets/untitled.png" class="img-fluid">
+            <img src="../assets/untitled.png" class="img-fluid">
+            <img src="../assets/untitled.png" class="img-fluid">
+
         </div>
     </div>
 </template>

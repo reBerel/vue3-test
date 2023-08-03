@@ -6,12 +6,16 @@
           <div class="card-body">
             <div class="col-auto">
               <label for="nickName">닉네임: </label>
-              <input v-model="nickName" type="text" class="form-control" id="nickName">
+              <div class="col-auto">
+              <input v-model="nickName" type="name" class=" form-control m-2 col-6" id="nickName">
+            </div>
               <button class="btn btn-primary">중복확인</button>
             </div>
             <div class="col-auto">
               <label for="name">이름 </label>
+              <div class="col-auto">
               <input v-model="name" type="name" class="form-control" id="name">
+            </div>
             </div>
             <div class="col-auto">
               <label for="email">이메일</label>
@@ -25,7 +29,7 @@
               <label for="passwordCheck">비밀번호 확인</label>
               <input v-model="passwordCheck" type="password" class="form-control" id="passwordCheck">
             </div>
-            <button class="btn btn-primary"></button>
+            <button class="btn btn-primary mt-2">확인</button>
           </div>
         </div>
       </form>
