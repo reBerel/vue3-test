@@ -1,12 +1,6 @@
 <template lang="">
-    <div class="container">
-        <div>
-            <img src="../assets/untitled.png" class="img-fluid">
-            <img src="../assets/untitled.png" class="img-fluid">
-            <img src="../assets/untitled.png" class="img-fluid">
-            <img src="../assets/untitled.png" class="img-fluid">
-
-        </div>
+    <div style="width:100%; height:200vh; background-color:black;">
+        123
     </div>
 </template>
 <script lang="ts">
@@ -14,6 +8,6 @@ export default {
     
 }
 </script>
-<style lang="">
+<style>
     
 </style>

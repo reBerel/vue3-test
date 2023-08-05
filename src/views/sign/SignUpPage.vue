@@ -1,13 +1,12 @@
 <template lang="">
-    <div class="sign-in-container">
       <form @submit.prevent="onSubmit">
-        <h4> 회원가입 </h4>
+        <h4> 회원가입 - 개인정보 </h4>
         <div class="card">
           <div class="card-body">
             <div class="col-auto">
-              <label for="nickName">닉네임: </label>
+              <label for="nickname">닉네임: </label>
               <div class="col-auto">
-              <input v-model="nickName" type="name" class=" form-control m-2 col-6" id="nickName">
+              <input v-model="nickname" type="name" class=" form-control m-2 col-6" id="nickname">
             </div>
               <button class="btn btn-primary">중복확인</button>
             </div>
@@ -30,44 +29,25 @@
               <input v-model="passwordCheck" type="password" class="form-control" id="passwordCheck">
             </div>
             <button class="btn btn-primary mt-2">확인</button>
+            <div>
+          <button class="btn btn-primary ">dddd</button>
+            </div>
           </div>
         </div>
       </form>
-    </div>
 </template>
-<script lang="ts">
-import router from "@/router";
-import { Options, Vue } from "vue-class-component";
 
-@Options({
-  data() {
-    return {
-      nickName: '',    
-      name: '',
-      email: '',
-      password: '',
-      passwordCheck: '',
-    };
-  },
-  computed: {
-    isPassword() {
-      return this.password !== this.passwordCheck;
-    }
+<script lang="ts">
+import { defineComponent } from "vue"
+
+
+export default defineComponent({
+  setup() {
+    const nickname = ""
+    return{nickname}
+
   }
 })
-export default class SignUpPage extends Vue {
-  password = "";
-  passwordCheck = "";
-  isPassword = this.password !== this.passwordCheck;
-  onSubmit() {
-    if (this.isPassword) {
-      alert("비밀번호가 다릅니다.")
-    }else{
-      router.push("sign-in")
-    }
-    console.log()
-  }
-}
 </script>
 <style lang="">
 </style>
