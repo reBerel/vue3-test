@@ -42,9 +42,9 @@ import { defineComponent } from "vue"
 
 
 export default defineComponent({
-  setup() {
-    const nickname = ""
-    return{nickname}
+  setup() {    
+
+    return{}
 
   }
 })
